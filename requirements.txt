@@ -1,0 +1,20 @@
+yfinance
+pandas
+numpy
+python-dateutil
+
+# Macroeconomic data
+fredapi>=0.5.0
+
+# Multi-source validation
+alpha-vantage>=2.3.0
+
+# Optional dependencies for automation features (uncomment when needed)
+# schedule      # for automated scheduling
+# logging       # built-in Python module for production logging
+
+# Development and testing (optional)
+# pytest
+# pytest-cov
+# black
+# flake8

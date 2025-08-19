@@ -1,0 +1,6 @@
+2025-08-18 18:38:31 - yfinance_pipeline - ERROR - log_error:157 - report_generation failed for comprehensive: Failed to generate comprehensive report: 'ticker'
+2025-08-18 18:38:31 - yfinance_pipeline - ERROR - wrapper:250 - Function generate_comprehensive_report failed after 0.02s: 'ticker'
+2025-08-18 18:38:31 - yfinance_pipeline - ERROR - main:244 - Report generation failed: 'ticker'
+2025-08-18 18:38:31 - yfinance_pipeline - ERROR - log_error:157 - report_generation failed for comprehensive: 'ticker'
+2025-08-18 20:45:27 - yfinance_pipeline - ERROR - main:302 - Pipeline execution failed: 'summary'
+2025-08-18 20:45:27 - yfinance_pipeline - ERROR - log_error:157 - pipeline_execution failed for main: 'summary'

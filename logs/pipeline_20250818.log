@@ -1,0 +1,177 @@
+2025-08-18 18:38:30 - yfinance_pipeline - INFO - main:141 - Starting enhanced YFinance pipeline
+2025-08-18 18:38:30 - yfinance_pipeline - INFO - main:149 - Fetching data for 2 tickers: ['AAPL', 'MSFT']
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - main:222 - Generating comprehensive reports
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - __init__:67 - Matplotlib/Seaborn initialized for visualizations
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - generate_daily_validation_summary:119 - Daily validation summary generated successfully
+2025-08-18 18:38:31 - yfinance_pipeline - ERROR - log_error:157 - report_generation failed for comprehensive: Failed to generate comprehensive report: 'ticker'
+2025-08-18 18:38:31 - yfinance_pipeline - ERROR - wrapper:250 - Function generate_comprehensive_report failed after 0.02s: 'ticker'
+2025-08-18 18:38:31 - yfinance_pipeline - ERROR - main:244 - Report generation failed: 'ticker'
+2025-08-18 18:38:31 - yfinance_pipeline - ERROR - log_error:157 - report_generation failed for comprehensive: 'ticker'
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - main:249 - ============================================================
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - main:250 - PIPELINE EXECUTION SUMMARY
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - main:251 - ============================================================
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - main:252 - ✅ Processed 12 records for 2 tickers
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - main:253 - 📊 Date range: 2024-01-01 to 2024-01-10
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - main:263 - 💾 Outputs saved to: data/market_data.db, outputs/prices.csv, outputs/validation_report.json
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - main:266 - 📋 Reports generated in outputs/reports/
+2025-08-18 18:38:31 - yfinance_pipeline - INFO - main:268 - ============================================================
+2025-08-18 20:14:32 - yfinance_pipeline - INFO - main:141 - Starting enhanced YFinance pipeline
+2025-08-18 20:14:32 - yfinance_pipeline - INFO - main:149 - Fetching data for 2 tickers: ['AAPL', 'MSFT']
+2025-08-18 20:14:33 - yfinance_pipeline - INFO - main:222 - Generating comprehensive reports
+2025-08-18 20:14:33 - yfinance_pipeline - INFO - __init__:67 - Matplotlib/Seaborn initialized for visualizations
+2025-08-18 20:14:33 - yfinance_pipeline - INFO - generate_daily_validation_summary:119 - Daily validation summary generated successfully
+2025-08-18 20:14:35 - yfinance_pipeline - INFO - create_price_chart:402 - Price chart saved to outputs\reports\price_chart_AAPL_20250818_201434.png
+2025-08-18 20:14:36 - yfinance_pipeline - INFO - create_price_chart:402 - Price chart saved to outputs\reports\price_chart_MSFT_20250818_201435.png
+2025-08-18 20:14:36 - yfinance_pipeline - INFO - create_correlation_heatmap:476 - Correlation heatmap saved to outputs\reports\correlation_heatmap_20250818_201436.png
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - create_volatility_chart:559 - Volatility chart saved to outputs\reports\volatility_chart_20250818_201436.png
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - generate_anomaly_csv_report:296 - Empty anomaly report saved to outputs\reports\anomaly_report_20250818_201437.csv
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - generate_comprehensive_report:648 - Comprehensive report generated and saved to outputs\reports\comprehensive_report_20250818_201433.json
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - main:241 - Comprehensive reports generated successfully
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - main:249 - ============================================================
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - main:250 - PIPELINE EXECUTION SUMMARY
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - main:251 - ============================================================
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - main:252 - ✅ Processed 12 records for 2 tickers
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - main:253 - 📊 Date range: 2024-01-01 to 2024-01-10
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - main:263 - 💾 Outputs saved to: data/market_data.db, outputs/prices.csv, outputs/validation_report.json
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - main:266 - 📋 Reports generated in outputs/reports/
+2025-08-18 20:14:37 - yfinance_pipeline - INFO - main:268 - ============================================================
+2025-08-18 20:15:42 - yfinance_pipeline - INFO - main:141 - Starting enhanced YFinance pipeline
+2025-08-18 20:15:42 - yfinance_pipeline - INFO - main:149 - Fetching data for 3 tickers: ['AAPL', 'TSLA', 'SPY']
+2025-08-18 20:15:43 - yfinance_pipeline - INFO - main:157 - Starting multi-source validation
+2025-08-18 20:15:43 - yfinance_pipeline - WARNING - main:179 - No Alpha Vantage API key provided, skipping validation
+2025-08-18 20:15:43 - yfinance_pipeline - INFO - main:188 - Fetching macroeconomic data
+2025-08-18 20:15:43 - yfinance_pipeline - WARNING - main:204 - No FRED API key provided, skipping macro data
+2025-08-18 20:15:43 - yfinance_pipeline - INFO - main:222 - Generating comprehensive reports
+2025-08-18 20:15:43 - yfinance_pipeline - INFO - __init__:67 - Matplotlib/Seaborn initialized for visualizations
+2025-08-18 20:15:43 - yfinance_pipeline - INFO - generate_daily_validation_summary:119 - Daily validation summary generated successfully
+2025-08-18 20:15:44 - yfinance_pipeline - INFO - create_price_chart:402 - Price chart saved to outputs\reports\price_chart_AAPL_20250818_201543.png
+2025-08-18 20:15:44 - yfinance_pipeline - INFO - create_price_chart:402 - Price chart saved to outputs\reports\price_chart_SPY_20250818_201544.png
+2025-08-18 20:15:45 - yfinance_pipeline - INFO - create_price_chart:402 - Price chart saved to outputs\reports\price_chart_TSLA_20250818_201545.png
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - create_correlation_heatmap:476 - Correlation heatmap saved to outputs\reports\correlation_heatmap_20250818_201545.png
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - create_volatility_chart:559 - Volatility chart saved to outputs\reports\volatility_chart_20250818_201546.png
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - generate_anomaly_csv_report:296 - Empty anomaly report saved to outputs\reports\anomaly_report_20250818_201546.csv
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - generate_comprehensive_report:648 - Comprehensive report generated and saved to outputs\reports\comprehensive_report_20250818_201543.json
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - main:241 - Comprehensive reports generated successfully
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - main:249 - ============================================================
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - main:250 - PIPELINE EXECUTION SUMMARY
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - main:251 - ============================================================
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - main:252 - ✅ Processed 27 records for 3 tickers
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - main:253 - 📊 Date range: 2024-01-01 to 2024-01-15
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - main:263 - 💾 Outputs saved to: data/market_data.db, outputs/prices.csv, outputs/validation_report.json
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - main:266 - 📋 Reports generated in outputs/reports/
+2025-08-18 20:15:46 - yfinance_pipeline - INFO - main:268 - ============================================================
+2025-08-18 20:20:41 - yfinance_pipeline - INFO - main:139 - Starting enhanced YFinance pipeline
+2025-08-18 20:20:41 - yfinance_pipeline - INFO - main:147 - Fetching data for 2 tickers: ['AAPL', 'MSFT']
+2025-08-18 20:20:42 - yfinance_pipeline - INFO - main:221 - ============================================================
+2025-08-18 20:20:42 - yfinance_pipeline - INFO - main:222 - PIPELINE EXECUTION SUMMARY
+2025-08-18 20:20:42 - yfinance_pipeline - INFO - main:223 - ============================================================
+2025-08-18 20:20:42 - yfinance_pipeline - INFO - main:224 - ✅ Processed 12 records for 2 tickers
+2025-08-18 20:20:42 - yfinance_pipeline - INFO - main:225 - 📊 Date range: 2024-01-01 to 2024-01-10
+2025-08-18 20:20:42 - yfinance_pipeline - INFO - main:235 - 💾 Outputs saved to: data/market_data.db, outputs/prices.csv, outputs/validation_report.json
+2025-08-18 20:20:42 - yfinance_pipeline - INFO - main:236 - ============================================================
+2025-08-18 20:20:53 - yfinance_pipeline - INFO - main:139 - Starting enhanced YFinance pipeline
+2025-08-18 20:20:53 - yfinance_pipeline - INFO - main:147 - Fetching data for 2 tickers: ['AAPL', 'TSLA']
+2025-08-18 20:20:54 - yfinance_pipeline - INFO - main:155 - Starting multi-source validation
+2025-08-18 20:20:54 - yfinance_pipeline - WARNING - main:177 - No Alpha Vantage API key provided, skipping validation
+2025-08-18 20:20:54 - yfinance_pipeline - INFO - main:186 - Fetching macroeconomic data
+2025-08-18 20:20:54 - yfinance_pipeline - WARNING - main:202 - No FRED API key provided, skipping macro data
+2025-08-18 20:20:54 - yfinance_pipeline - INFO - main:221 - ============================================================
+2025-08-18 20:20:54 - yfinance_pipeline - INFO - main:222 - PIPELINE EXECUTION SUMMARY
+2025-08-18 20:20:54 - yfinance_pipeline - INFO - main:223 - ============================================================
+2025-08-18 20:20:54 - yfinance_pipeline - INFO - main:224 - ✅ Processed 12 records for 2 tickers
+2025-08-18 20:20:54 - yfinance_pipeline - INFO - main:225 - 📊 Date range: 2024-01-01 to 2024-01-10
+2025-08-18 20:20:54 - yfinance_pipeline - INFO - main:235 - 💾 Outputs saved to: data/market_data.db, outputs/prices.csv, outputs/validation_report.json
+2025-08-18 20:20:54 - yfinance_pipeline - INFO - main:236 - ============================================================
+2025-08-18 20:29:45 - yfinance_pipeline - INFO - main:139 - Starting enhanced YFinance pipeline
+2025-08-18 20:29:45 - yfinance_pipeline - INFO - main:147 - Fetching data for 2 tickers: ['AAPL', 'MSFT']
+2025-08-18 20:29:46 - yfinance_pipeline - INFO - main:221 - ============================================================
+2025-08-18 20:29:46 - yfinance_pipeline - INFO - main:222 - PIPELINE EXECUTION SUMMARY
+2025-08-18 20:29:46 - yfinance_pipeline - INFO - main:223 - ============================================================
+2025-08-18 20:29:46 - yfinance_pipeline - INFO - main:224 - ✅ Processed 6 records for 2 tickers
+2025-08-18 20:29:46 - yfinance_pipeline - INFO - main:225 - 📊 Date range: 2024-01-01 to 2024-01-05
+2025-08-18 20:29:46 - yfinance_pipeline - INFO - main:235 - 💾 Outputs saved to: data/market_data.db, outputs/prices.csv, outputs/validation_report.json
+2025-08-18 20:29:46 - yfinance_pipeline - INFO - main:236 - ============================================================
+2025-08-18 20:34:01 - yfinance_pipeline - INFO - main:139 - Starting enhanced YFinance pipeline
+2025-08-18 20:34:01 - yfinance_pipeline - INFO - main:147 - Fetching data for 1 tickers: ['AAPL']
+2025-08-18 20:34:06 - yfinance_pipeline - INFO - main:155 - Starting multi-source validation
+2025-08-18 20:34:06 - yfinance_pipeline - WARNING - main:177 - No Alpha Vantage API key provided, skipping validation
+2025-08-18 20:34:06 - yfinance_pipeline - INFO - main:221 - ============================================================
+2025-08-18 20:34:06 - yfinance_pipeline - INFO - main:222 - PIPELINE EXECUTION SUMMARY
+2025-08-18 20:34:06 - yfinance_pipeline - INFO - main:223 - ============================================================
+2025-08-18 20:34:06 - yfinance_pipeline - INFO - main:224 - ✅ Processed 3 records for 1 tickers
+2025-08-18 20:34:06 - yfinance_pipeline - INFO - main:225 - 📊 Date range: 2024-01-01 to 2024-01-05
+2025-08-18 20:34:06 - yfinance_pipeline - INFO - main:235 - 💾 Outputs saved to: data/market_data.db, outputs/prices.csv, outputs/validation_report.json
+2025-08-18 20:34:06 - yfinance_pipeline - INFO - main:236 - ============================================================
+2025-08-18 20:35:47 - yfinance_pipeline - INFO - main:139 - Starting enhanced YFinance pipeline
+2025-08-18 20:35:47 - yfinance_pipeline - INFO - main:147 - Fetching data for 1 tickers: ['AAPL']
+2025-08-18 20:35:48 - yfinance_pipeline - INFO - main:221 - ============================================================
+2025-08-18 20:35:48 - yfinance_pipeline - INFO - main:222 - PIPELINE EXECUTION SUMMARY
+2025-08-18 20:35:48 - yfinance_pipeline - INFO - main:223 - ============================================================
+2025-08-18 20:35:48 - yfinance_pipeline - INFO - main:224 - ✅ Processed 1 records for 1 tickers
+2025-08-18 20:35:48 - yfinance_pipeline - INFO - main:225 - 📊 Date range: 2024-01-01 to 2024-01-03
+2025-08-18 20:35:48 - yfinance_pipeline - INFO - main:235 - 💾 Outputs saved to: data/market_data.db, outputs/prices.csv, outputs/validation_report.json
+2025-08-18 20:35:48 - yfinance_pipeline - INFO - main:236 - ============================================================
+2025-08-18 20:40:03 - yfinance_pipeline - INFO - main:139 - Starting enhanced YFinance pipeline
+2025-08-18 20:40:03 - yfinance_pipeline - INFO - main:147 - Fetching data for 3 tickers: ['AAPL', 'MSFT', 'GOOGL']
+2025-08-18 20:40:04 - yfinance_pipeline - INFO - main:221 - ============================================================
+2025-08-18 20:40:04 - yfinance_pipeline - INFO - main:222 - PIPELINE EXECUTION SUMMARY
+2025-08-18 20:40:04 - yfinance_pipeline - INFO - main:223 - ============================================================
+2025-08-18 20:40:04 - yfinance_pipeline - INFO - main:224 - ✅ Processed 18 records for 3 tickers
+2025-08-18 20:40:04 - yfinance_pipeline - INFO - main:225 - 📊 Date range: 2024-01-01 to 2024-01-10
+2025-08-18 20:40:04 - yfinance_pipeline - INFO - main:235 - 💾 Outputs saved to: data/market_data.db, outputs/prices.csv, outputs/validation_report.json
+2025-08-18 20:40:04 - yfinance_pipeline - INFO - main:236 - ============================================================
+2025-08-18 20:45:26 - yfinance_pipeline - INFO - main:192 - Starting enhanced YFinance pipeline
+2025-08-18 20:45:26 - yfinance_pipeline - INFO - main:200 - Fetching data for 1 tickers: ['AAPL']
+2025-08-18 20:45:27 - yfinance_pipeline - ERROR - main:302 - Pipeline execution failed: 'summary'
+2025-08-18 20:45:27 - yfinance_pipeline - ERROR - log_error:157 - pipeline_execution failed for main: 'summary'
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:136 - 🚀 Starting enhanced YFinance pipeline
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:144 - 📋 Request ID: 20250818_210058_AAPL_MSFT_20240101_20240110
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - _initialize_schema:122 - Database schema initialized successfully
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - create_request_log:155 - Created request log: 20250818_210058_AAPL_MSFT_20240101_20240110
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:153 - 📈 Fetching ticker data for 2 tickers: ['AAPL', 'MSFT']
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:216 - 💡 Tip: Add FRED API key to include economic context
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:220 - 💾 Saving data to database (checking for duplicates)
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - save_market_data:226 - Saved 12 market data records (duplicates skipped)
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - update_request_status:175 - Updated request 20250818_210058_AAPL_MSFT_20240101_20240110 status: completed
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:242 - 📄 Creating output files
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - create_timestamped_csv:66 - 📄 Created timestamped CSV: prices_AAPL-MSFT_20240101-20240110_20250818_210058.csv
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - create_validation_report:132 - 📋 Created validation report: validation_report_20250818_210058_AAPL_MSFT_20240101_20240110_20250818_210058.json
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - create_summary_log:282 - 📜 Created execution log: execution_log_20250818_210058_AAPL_MSFT_20240101_20240110_20250818_210058.json
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:262 - 📄 Created CSV: prices_AAPL-MSFT_20240101-20240110_20250818_210058.csv
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:263 - 📋 Created validation report: validation_report_20250818_210058_AAPL_MSFT_20240101_20240110_20250818_210058.json
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:265 - 📜 Created execution log: execution_log_20250818_210058_AAPL_MSFT_20240101_20240110_20250818_210058.json
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:272 - ======================================================================
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:273 - 🎉 PIPELINE EXECUTION SUMMARY
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:274 - ======================================================================
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:275 - 📋 Request ID: 20250818_210058_AAPL_MSFT_20240101_20240110
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:276 - ✅ Processed 12 market records for 2 tickers
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:277 - 📊 Date range: 2024-01-01 to 2024-01-10
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:289 - 🗄️ Database now contains 12 total market records
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:290 - 📄 Files saved in outputs/ with timestamp 20250818_210058
+2025-08-18 21:00:58 - yfinance_pipeline - INFO - main:292 - ======================================================================
+2025-08-18 21:01:40 - yfinance_pipeline - INFO - main:136 - 🚀 Starting enhanced YFinance pipeline
+2025-08-18 21:01:40 - yfinance_pipeline - INFO - main:144 - 📋 Request ID: 20250818_210140_GOOGL_20240115_20240120
+2025-08-18 21:01:40 - yfinance_pipeline - INFO - _initialize_schema:122 - Database schema initialized successfully
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - create_request_log:155 - Created request log: 20250818_210140_GOOGL_20240115_20240120
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:153 - 📈 Fetching ticker data for 1 tickers: ['GOOGL']
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:216 - 💡 Tip: Add FRED API key to include economic context
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:220 - 💾 Saving data to database (checking for duplicates)
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - save_market_data:226 - Saved 4 market data records (duplicates skipped)
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - update_request_status:175 - Updated request 20250818_210140_GOOGL_20240115_20240120 status: completed
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:242 - 📄 Creating output files
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - create_timestamped_csv:66 - 📄 Created timestamped CSV: prices_GOOGL_20240115-20240120_20250818_210141.csv
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - create_validation_report:132 - 📋 Created validation report: validation_report_20250818_210140_GOOGL_20240115_20240120_20250818_210141.json
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - create_summary_log:282 - 📜 Created execution log: execution_log_20250818_210140_GOOGL_20240115_20240120_20250818_210141.json
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:262 - 📄 Created CSV: prices_GOOGL_20240115-20240120_20250818_210141.csv
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:263 - 📋 Created validation report: validation_report_20250818_210140_GOOGL_20240115_20240120_20250818_210141.json
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:265 - 📜 Created execution log: execution_log_20250818_210140_GOOGL_20240115_20240120_20250818_210141.json
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:272 - ======================================================================
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:273 - 🎉 PIPELINE EXECUTION SUMMARY
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:274 - ======================================================================
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:275 - 📋 Request ID: 20250818_210140_GOOGL_20240115_20240120
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:276 - ✅ Processed 4 market records for 1 tickers
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:277 - 📊 Date range: 2024-01-15 to 2024-01-20
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:289 - 🗄️ Database now contains 16 total market records
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:290 - 📄 Files saved in outputs/ with timestamp 20250818_210141
+2025-08-18 21:01:41 - yfinance_pipeline - INFO - main:292 - ======================================================================
+2025-08-18 21:02:02 - yfinance_pipeline - INFO - _initialize_schema:122 - Database schema initialized successfully

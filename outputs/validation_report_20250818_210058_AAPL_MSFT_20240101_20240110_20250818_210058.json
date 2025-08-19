@@ -1,0 +1,58 @@
+{
+  "report_metadata": {
+    "request_id": "20250818_210058_AAPL_MSFT_20240101_20240110",
+    "report_type": "comprehensive_validation",
+    "generated_at": "2025-08-18T21:00:58.825435",
+    "report_version": "1.0"
+  },
+  "request_details": {
+    "tickers": [
+      "AAPL",
+      "MSFT"
+    ],
+    "date_range": {
+      "start": "2024-01-01",
+      "end": "2024-01-10"
+    },
+    "execution_timestamp": "2025-08-18T21:00:58.825435"
+  },
+  "ticker_validation": {
+    "basic_checks": {
+      "null_counts": {
+        "date": 0,
+        "Ticker": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "adj_close": 0,
+        "volume": 0
+      },
+      "duplicate_rows": 0,
+      "neg_close": 0,
+      "neg_volume": 0,
+      "extreme_moves": 0,
+      "approx_missing_bdays": {
+        "AAPL": 0,
+        "MSFT": 0
+      }
+    },
+    "cross_validation": {
+      "status": "not_performed",
+      "reason": "No Alpha Vantage API key provided or validation not enabled"
+    }
+  },
+  "macro_validation": {
+    "status": "not_fetched",
+    "reason": "Macro data not requested or FRED API key not provided"
+  },
+  "quality_assessment": {
+    "basic_data_quality": 100.0,
+    "cross_validation_reliability": "N/A",
+    "macro_data_completeness": "N/A",
+    "overall_score": 100.0
+  },
+  "recommendations": [
+    "\u2705 Excellent data quality! No issues detected. Data ready for analysis."
+  ]
+}
