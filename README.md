@@ -1,4 +1,4 @@
-# YFinance Enhanced Data Pipeline
+# Multi-Source Financial Data Pipeline
 
 A production-ready financial data platform that fetches, validates, and processes market data with enterprise-grade features including multi-source validation, macroeconomic data integration, and comprehensive request tracking.
 
@@ -94,3 +94,4 @@ Data quality issues and resolutions
 ## Getting Started
 
 For complete installation instructions, usage examples, and troubleshooting, see **[USER_GUIDE.md](USER_GUIDE.md)**.
+
