@@ -12,27 +12,6 @@ This project provides a comprehensive financial data pipeline that:
 - Generates timestamped outputs for each data request
 - Provides comprehensive validation and quality assessment
 
-## Key Features
-
-### Comprehensive Data Collection
-- Multi-ticker support for simultaneous stock data download
-- Automatic macroeconomic context via FRED integration
-- Multi-source validation using Alpha Vantage cross-referencing
-- Technical indicators calculation (MA20, MA50, volatility, returns)
-
-### Enterprise-Grade Architecture
-- Unique request ID tracking for full traceability
-- Append-only database with duplicate prevention
-- Timestamped outputs with descriptive naming
-- Combined basic and cross-source validation
-- Professional logging with centralized error handling
-
-### Automated Reporting
-- Data reliability metrics and quality scores
-- Combined validation reports (basic + cross-validation)
-- Complete execution logs with performance metrics
-- Price discrepancy flagging and anomaly detection
-
 ## Project Structure
 
 ```
@@ -58,29 +37,16 @@ YFinance/
 └─ USER_GUIDE.md            # Complete usage instructions and examples
 ```
 
-## Database Schema
 
-The system automatically creates and manages these tables:
 
-### request_log
-Tracks every pipeline execution with metadata
-- `request_id`, `timestamp`, `tickers`, `date_range`, `status`, `records_fetched`
-
-### market_data
-Accumulated stock price data with technical indicators
-- `ticker`, `date`, `ohlcv`, `technical_indicators`, `fetch_timestamp`, `request_id`, `discrepancy_flag`
-
-### macro_data 
-Economic indicators from FRED API
-- `series_id`, `date`, `value`, `series_name`, `category`, `fetch_timestamp`, `request_id`
-
-### cross_validation
-Price discrepancies between data sources
-- `ticker`, `date`, `yahoo_close`, `alpha_close`, `diff_pct`, `resolved_as`, `request_id`
-
-### validation_log
-Data quality issues and resolutions
-- `request_id`, `validation_type`, `issue_type`, `description`, `severity_score`
+### Request Workflow
+1. Request registration with unique ID generation
+2. Multi-source data fetching (Yahoo Finance, Alpha Vantage, FRED)
+3. Comprehensive validation (basic checks + cross-validation)
+4. Technical indicator calculation and data processing
+5. Database storage with duplicate prevention
+6. Timestamped output file generation
+<img width="865" height="689" alt="image" src="https://github.com/user-attachments/assets/ada00c1b-4207-491c-9f55-443d1777dfdf" />
 
 ## Data Quality Features
 
@@ -98,65 +64,33 @@ Data quality issues and resolutions
 - Yahoo Finance prioritized as "source of truth"
 - Detailed anomaly reporting with resolution
 
-### Macro Data Validation (Basic Only)
-- Data completeness checks
-- Missing value identification
-- Series availability verification
-- Date range coverage analysis
 
-## Dependencies
+## Database Schema
 
-```txt
-yfinance              # Yahoo Finance data
-pandas                # Data manipulation
-numpy                 # Numerical computing
-python-dateutil       # Date handling
+The system automatically creates and manages these tables:
 
-# Enhanced features
-fredapi>=0.5.0        # FRED economic data
-alpha-vantage>=2.3.0  # Multi-source validation
-```
+### request_log
+Tracks every pipeline execution with metadata
+`request_id`, `timestamp`, `tickers`, `date_range`, `status`, `records_fetched`
 
-## API Integration
+### market_data
+Accumulated stock price data with technical indicators
+`ticker`, `date`, `ohlcv`, `technical_indicators`, `fetch_timestamp`, `request_id`, `discrepancy_flag`
 
-### Supported Data Sources
-- **Yahoo Finance**: Primary source for stock price data
-- **Alpha Vantage**: Secondary source for price validation (optional)
-- **FRED**: Federal Reserve Economic Data for macroeconomic context (optional)
+### macro_data 
+Economic indicators from FRED API
+`series_id`, `date`, `value`, `series_name`, `category`, `fetch_timestamp`, `request_id`
 
-### Output Generation
-- **Timestamped CSVs**: Format `prices_TICKER1-TICKER2_STARTDATE-ENDDATE_TIMESTAMP.csv`
-- **Validation Reports**: Comprehensive JSON reports with quality scores
-- **Execution Logs**: Complete request summaries with performance metrics
+### cross_validation
+Price discrepancies between data sources
+`ticker`, `date`, `yahoo_close`, `alpha_close`, `diff_pct`, `resolved_as`, `request_id`
 
-## Technical Architecture
-
-### Request Workflow
-1. Request registration with unique ID generation
-2. Multi-source data fetching (Yahoo Finance, Alpha Vantage, FRED)
-3. Comprehensive validation (basic checks + cross-validation)
-4. Technical indicator calculation and data processing
-5. Database storage with duplicate prevention
-6. Timestamped output file generation
-
-### Error Handling
-- Centralized logging system with multiple log levels
-- Exponential backoff for API rate limit handling
-- Graceful degradation when optional features fail
-- Comprehensive error tracking and reporting
-
-## License & Disclaimer
-
-This project is for educational and research purposes only. Not intended for financial advice or live trading. Market data accuracy depends on underlying providers (Yahoo Finance, Alpha Vantage, FRED).
+### validation_log
+Data quality issues and resolutions
+`request_id`, `validation_type`, `issue_type`, `description`, `severity_score`
 
 ---
 
 ## Getting Started
 
 For complete installation instructions, usage examples, and troubleshooting, see **[USER_GUIDE.md](USER_GUIDE.md)**.
-
-Basic usage:
-```bash
-pip install -r requirements.txt
-python run_pipeline.py --tickers AAPL MSFT
-```
